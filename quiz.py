@@ -3,7 +3,7 @@ from random import shuffle
 from flask import Flask, session, request, redirect, render_template, url_for
 from db_scripts import get_question_after, get_quises, check_answer
 
-def start_quiz(quiz_id)r:
+def start_quiz(quiz_id):
     '''creates the desired values ​​in the session dictionary'''
     session['quiz'] = quiz_id
     session['last_question'] = 0
