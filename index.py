@@ -16,7 +16,7 @@ def end_quiz():
 def quiz_form():
     ''' the function receives a list of quizzes from the database and forms a form with a drop-down list '''
     q_list = get_quises()
-    return render_template('start.html', q_list=q_list)
+    return render_template('index.html', q_list=q_list)
 
 def index():
     ''' First page: if you came with a GET request, then select a quiz,
